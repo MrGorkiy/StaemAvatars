@@ -1,0 +1,631 @@
+* {
+    margin: 0;
+}
+
+:root {
+  --fontlight:#F2E3F9;
+  --font-medium:#6F697A;
+  --font-dark:#C5B9D6;
+  --fontheader:#E3D6F3;
+  --fontspecial:#9EDC9E;
+  --doc-link:#BD95EA;
+  --doc-mod:#D09595;
+
+  --border:#302843;
+  --border-dark: #000;
+  --highlight: #5A3685;
+  --superhighlight:#7F4CBA;
+  --superhighlightpressed:#5F3392;
+  --foreground1:#452B69FF;
+  --foreground1Light:#232128;
+  --background1Light:#232128;
+  --background1:#17141a;
+  --background2:#1F1F1F;
+  --foreground2:#353535;
+}
+
+body {
+  color: var(--fontlight);
+}
+
+.highlighter {
+  font-family: monospace, monospace;
+  background-color: var(--highlight);
+  display: inline-block;
+  padding: 0 5px 0 3px;
+}
+
+.nav ul li .active {
+  background-color: var(--superhighlight);
+}
+
+.test {
+    background-color: #1D1A24FF;
+}
+
+.sa-doc-changes a, .sa-doc-changes a b {
+   color: var(--doc-link);
+}
+
+.sa-doc-changes a b:hover, .sa-doc-changes a:hover {
+   color: var(--fontlight);
+}
+
+.sa-docs a, .sa-doc-nav a {
+    text-decoration: underline;
+    color: var(--doc-link);
+}
+
+.sa-doc-changes b {
+  color: var(--fontspecial);
+ 
+}
+
+html {
+    height: 100%;
+    background: var(--background1);
+}
+
+ul {
+    padding-left:  5px;
+    
+}
+i {
+  color: var(--font-dark)
+}
+
+.mod {
+    color: var(--doc-mod) !important;
+}
+
+.sa-doc-changes ul li {
+  padding-top: 4px;
+}
+
+.sa-doc-changes img {
+  width: auto;
+  max-width: 100%;
+}
+ol {
+  padding-left:  20px;
+
+}
+
+ol li{
+   padding-bottom: 8px;
+   font-size: 15px;
+
+}
+
+.sa-doc-changes ol li ul li {
+  padding-bottom: 0;
+  padding-top: 3px;
+  padding-left: 10px;
+}
+
+ul {
+  font-size: 15px;
+  padding-bottom:  2px;
+}
+
+.sa-ordered ul {
+   padding-bottom: 8px;
+   color: var(--font-dark);
+   margin-left: 8px;
+
+}
+
+.sa-doc-changes p {
+  font-size: 15px;
+  padding-left: 8px;
+  margin-bottom: 5px;
+}
+
+.sa-ordered ul li::before {
+   content: "• ";
+}
+
+.sa-doc-changes ul li {
+  list-style: none;
+}
+
+
+
+.sa-doc-nav ul li::before, .sa-doc-nav ol li::before {
+   color: var(--doc-link);
+   content: "•";
+   padding-right: 3px;
+
+  
+}
+
+.darker {
+  color: var(--font-dark);
+}
+
+body {
+ 
+    
+    background: var(--background1);
+    /*background: -webkit-linear-gradient(0deg, var(--background1), var(--foreground1));
+    background: -o-linear-gradient(0deg, var(--background1), var(--foreground1));
+    background: -moz-linear-gradient(0deg, var(--background1), var(--foreground1));
+    background: linear-gradient(0deg, var(--background1), var(--foreground1)) 
+    background-size: 100% 350px;
+    background-repeat: no-repeat;*/
+    margin-top: 0;
+    height: 100%;
+}
+
+
+
+a {
+  color: var(--fontlight);
+}
+
+a:hover {
+  color: var(--fontlight);
+}
+
+h4 {
+  color: var(--fontheader);
+}
+
+ol {
+  color: var(--font-dark);
+}
+
+
+.nav-pills>li, .nav-pills>li:active, .nav-pills>li:focus, .nav-pills>li:hover {
+  /*text-decoration: underline;*/
+}
+
+.panel-heading {
+    padding: 1px 15px !important;
+    max-height: 200px;
+    
+    border: 1px;
+    border-bottom-color: var(--border-dark);
+    font-size: 18px;
+    background-color: var(--foreground1);
+}
+
+.panel-default>.panel-heading {
+  background-color: #362749;
+  border-style:solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: var(--border-dark);
+}
+
+.panel-body {
+
+}
+
+
+
+
+.panel {
+    background-color: var(--background2);
+    margin: auto;
+    color: #898395;
+    border-color: var(--border-dark);
+   min-height: 120px;
+   
+}
+
+.sa-doc-nav .panel {
+   margin-bottom: -1px;
+}
+
+.sa-docs .panel {
+  margin-bottom: 30px;
+}
+
+.navbar {
+  border-radius: 0px;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -33px; /* the bottom margin is the negative value of the footer's height */
+	padding-bottom: 36px;
+  
+}
+.footer, .push {
+    height: 33px; /* .push must be the same height as .footer */
+    min-height: 33px;
+}
+
+
+
+.footer {
+    margin-bottom: 0;
+}
+
+.navbar-default {
+  background-color: var(--background1);
+  
+  border: none;
+}
+
+.navbar-text {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.navbar-default .navbar-text {
+  color: var(--font-medium);
+}
+
+
+.container {
+  max-width: 900px;
+
+}
+
+.sa-content {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    
+}
+
+.content {
+  margin-bottom: 25px;
+}
+
+
+#streamers p {
+   white-space: nowrap; 
+    
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    background-color: 
+    
+}
+
+#streamers {
+  
+  height: 70px;
+}
+
+
+
+.streamerItem {
+  margin-top: 22px;
+}
+
+.views {
+  font-size: 20px;
+  text-align: right;
+}
+
+.portalSelected {
+  display: none !important;
+}
+
+.divider {
+  background: -webkit-gradient(radial, 54% 50%, 0, 50% 30%, 550, from(var(--background1)), to(var(--superhighlight)));
+
+  height: 1px;
+  margin-bottom: 30px;
+  margin-top: 5px;
+}
+
+.divider2 {
+  background: -webkit-gradient(radial, 54% 50%, 0, 20% 30%, 10, from(var(--background1)), to(var(--superhighlight)));
+
+  height: 1px;
+  margin-bottom: 30px;
+  margin-top: 5px;
+}
+
+.divider3 {
+  background: var(--highlight);
+
+
+  height: 1px;
+  margin-bottom: 30px;
+  margin-top: 5px;
+}
+
+.navbar .divider {
+   margin-bottom: 0;
+  margin-top: 0;
+}
+
+.vcenter {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vcenter p {
+  margin-bottom: 0;
+  color: aliceblue;
+  
+}
+
+.sa-header img {
+   height: auto;
+   width: auto;
+   
+   display: block;
+   float: leftfal;
+   margin-top: 2px;
+}
+
+.sa-header {
+  
+    top: 0;
+    height: 200px;
+    padding: 0;
+  
+}
+
+.spacer {
+  height: 70px;
+}
+
+.nav-pills {
+  max-height: 32px;
+}
+
+nav ul li a {
+  height: 31px;
+
+}
+
+.nav>li>a {
+   padding: 6px 15px;
+}
+
+
+.col-md-6 {
+    padding: 0px 0px 0px 0px;
+}
+
+.sa-panel h3 {
+    text-align: center;
+    
+}
+
+.not-yet {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";       /* IE 8 */
+filter: alpha(opacity=50);  /* IE 5-7 */
+-moz-opacity: 0.5;          /* Netscape */
+-khtml-opacity: 0.5;        /* Safari 1.x */
+opacity: 0.5;               /* Good browsers */
+}
+
+
+
+.nav-pills li a, .nav-pills li a:focus, .nav-pills li a:focus  {
+  background-color: var(--highlight);
+  color: var(--fontlight);
+  border-color: var(--border-dark);
+  border-style: solid;
+  border-width: 1px;
+}
+
+
+/*.nav-pills li.active a,  .nav-pills li a, .nav-pills li .active a:focus {
+   background-color: var(--highlight);
+  color: var(--fontlight);
+  border-color: var(--border-dark);
+  border-style: solid;
+  border-width: 1px;
+}*/
+
+.nav-pills li.active a:hover, .nav-pills li a:hover{
+  background-color: var(--superhighlight);
+  color: var(--fontlight);
+}
+
+
+
+.jumbotron {
+  background-color: var(--background2);
+  color: var(--font-dark);
+  
+  padding: 20px !important;
+  border-color: var(--border-dark);
+
+  border-width: 1px;
+  border-style: solid;
+}
+
+.jumbotron p {
+  margin-left: 0px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.jumbotron .pspace {
+    height: 5px;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 8px;
+  
+}
+
+.jumbotron img {
+  width: 100%;
+  border-radius: 2px;
+
+}
+
+.steam {
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 2px;
+  background: transparent;
+}
+
+.btn-default, .btn-default:focus {
+  color: var(--fontlight);
+  border-color: var(--superhighlight);
+  text-decoration: none;
+  background: transparent;
+}
+
+.btn-default:active:hover {
+   color: var(--fontlight);
+  border-color: var(--border-dark);
+  text-decoration: none;
+  background: var(--superhighlightpressed);
+}
+
+.btn-default:hover, .btn-default:active {
+  background-color: var(--superhighlight);
+  color: var(--fontlight);
+  border-color: var(--border-dark);
+  outline: 0;
+}
+
+
+
+.panel p {
+  color: var(--font-dark);
+}
+
+
+.btn-default:hover {
+  border-color: var(--highlight);
+  outline: 0;
+}
+.btn-default:focus {
+  outline: 0;
+}
+
+.form-control {
+    background-color: var(--background2);
+    border-color: var(--highlight);
+    color: var(--fontlight);
+
+}
+
+.form-control:focus, .form-control:hover {
+    border-color: var(--superhighlight);
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.input-group-btn:last-child>.btn, .input-group-btn:hover {
+  outline: 0;
+  border-color: var(--superhighlight);
+}
+.input-group {
+  margin-bottom: 35px;
+  margin-top: 10px;
+}
+
+.well {
+    margin-top: 5px;
+    background-color: var(--background2);
+    color: var(--fontlight);
+    border-color: var(--border-dark);
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+.well p {
+  margin: 6px 0 3px 5px;
+}
+
+.sa-tags {
+  display: none;
+}
+
+.doc-link {
+  width: auto;
+  margin: 6px 0 6px 22px;
+}
+
+
+.sa-doc-nav ol {
+  padding-left: 15px;
+}
+
+
+/* By default it's not affixed in mobile views, so undo that */
+.bs-sidebar.affix {
+  position: static;
+    
+}
+
+.sa-doc-nav {
+    margin-bottom: 60px;
+
+
+}
+
+/* First level of nav */
+.bs-sidenav {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  padding-top:    10px;
+  padding-bottom: 10px;
+  text-shadow: 0 1px 0 #fff;
+  background-color: #f7f5fa;
+  border-radius: 5px;
+
+  
+    
+}
+
+.nav-override {
+  top: 2 px;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -47px;
+    visibility: hidden;
+}
+
+a.anchor-main {
+    display: block;
+    position: relative;
+    top: -300px;
+    visibility: hidden;
+}
+
+/* Show and affix the side nav when space allows it */
+@media (min-width: 1355px) {
+  .sa-doc-nav {
+    top: -10px;
+    margin-top: 1px;
+    height: 0;
+    left: -220px;
+    margin-bottom: 0;
+  }
+
+
+  .bs-sidebar .nav > .active > ul {
+    display: block;
+  }
+  /* Widen the fixed sidebar */
+  .bs-sidebar.affix,
+  .bs-sidebar.affix-bottom {
+    width: 213px;
+  }
+  .bs-sidebar.affix {
+    position: fixed; /* Undo the static from mobile first approach */
+    top: 148px;
+  }
+  .bs-sidebar.affix-bottom {
+    position: absolute; /* Undo the static from mobile first approach */
+  }
+  .bs-sidebar.affix-bottom .bs-sidenav,
+  .bs-sidebar.affix .bs-sidenav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
